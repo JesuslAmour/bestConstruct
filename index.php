@@ -5,22 +5,21 @@
      <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- awesone fonts css-->
-    <link href="vues/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="scss/font-awesome.css" rel="stylesheet" type="text/css">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="vues/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- custom CSS -->
-    <link rel="stylesheet" type="text/css" media="screen" href="vues/css/connection_admin.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/connection_admin.css" />
     <script src="main.js"></script>
 </head>
 <body>
   <h1 style="text-align: center;">Welcome to <strong>bestConstruct</strong></h1>
     <div class="box connect">
         <span style="text-align: center; color: orangered" class="error"><?php echo $message = (isset($alert)) ? $alert : '' ; ?></span>
-        <img src="images/login.png" height="70px" width="70px" style="margin-left: 40%;">
+        <img src="img/login.png" height="70px" width="70px" style="margin-left: 40%;">
         <h2>Login</h2>
-        <form action="traitement.php" method="post" >
+        <form action="welcome.php" method="post" >
             <div class="inputbox">
                 <input type="text" required="" name="username">
                 <label for="username">Username</label>
@@ -38,9 +37,9 @@
          <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close text-light" title="Clode login">&times;</span>
 
         <span style="text-align: center; color: orangered" class="eror"><?php echo $message = (isset($alert)) ? $alert : '' ; ?></span>
-        <img src="images/forget_password.jpeg" height="70px" width="70px" style="margin-left: 40%;">
+        <img src="img/forget_password.jpeg" height="70px" width="70px" style="margin-left: 40%;">
         <h2>Restaure password</h2>
-        <form action="traitement.php" method="post">
+        <form action="welcome.php" method="post">
             <div class="inputbox">
                 <input type="text" required="" name="username">
                 <label for="username">Username</label>
@@ -53,7 +52,7 @@
         </form><br>
     </div>
 
-    <script src="vues/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
 
     <script type="text/javascript">
       $(function () {
